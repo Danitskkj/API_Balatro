@@ -8,7 +8,7 @@ Esta API está hospedada no Vercel e pode ser acessada através dos seguintes en
 
 ### Endpoints Principais:
 
-- **Base URL**: ``
+- **Base URL**: `api-balatro.vercel.app`
 - **Todos os curingas**: `/curingas`
 - **Curinga específico**: `/curingas/:id`
 - **Curinga aleatório**: `/curingas/aleatorio`
@@ -40,3 +40,12 @@ Cada curinga contém:
 - ✅ Imagens atualizadas da wiki oficial
 - ✅ API REST completa
 - ✅ Documentação interativa
+
+---
+
+## 👨‍💻 Autor
+
+**[@Danitskkj](https://github.com/Danitskkj)**
+
+- 🔗 **GitHub:** [API_Balatro](https://github.com/Danitskkj/API_Balatro)
+- 🎮 **Projeto:** API de Curingas do Balatro em PT-BR
