@@ -99,7 +99,7 @@ app.get('/', (req, res) => {
                     { nome: 'nome', tipo: 'string', descricao: 'Filtra por parte do nome do curinga.' },
                     { nome: 'raridade', tipo: 'string', descricao: 'Filtra por raridade (Comum, Incomum, Raro, Lendário).' },
                     { nome: 'tipo', tipo: 'string', descricao: 'Filtra por tipo de efeito (+c, +m, Xm, etc.).' },
-                    { nome: 'limit', tipo: 'integer', descricao: 'Número de resultados por página (padrão: 10).' },
+                    { nome: 'limit', tipo: 'integer', descricao: 'Número de resultados por página (padrão: 150).' },
                     { nome: 'page', tipo: 'integer', descricao: 'Número da página de resultados (padrão: 1).' }
                 ]
             },
@@ -156,11 +156,9 @@ app.get('/curingas', (req, res) => {
         resultados = resultados.filter(c => c.tipo === decodeURIComponent(tipo));
     }
 
-    const totalResultados = resultados.length;
-
-    // Aplica a paginação
+    const totalResultados = resultados.length;    // Aplica a paginação
     const pageNum = parseInt(page, 10) || 1;
-    const limitNum = parseInt(limit, 10) || 10;
+    const limitNum = parseInt(limit, 10) || 150; // Padrão alterado para 150 (todos os curingas)
     const startIndex = (pageNum - 1) * limitNum;
     const paginatedResults = resultados.slice(startIndex, startIndex + limitNum);
 

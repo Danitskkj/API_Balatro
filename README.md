@@ -9,11 +9,12 @@ Esta API está hospedada no Vercel e pode ser acessada através dos seguintes en
 ### Endpoints Principais:
 
 - **Base URL**: `api-balatro.vercel.app`
-- **Todos os curingas**: `/curingas`
+- **Todos os curingas**: `/curingas` (retorna todos os 150 por padrão)
 - **Curinga específico**: `/curingas/:id`
 - **Curinga aleatório**: `/curingas/aleatorio`
 - **Filtros por raridade**: `/curingas?raridade=Raro`
 - **Busca por nome**: `/curingas?nome=Ganancioso`
+- **Paginação**: `/curingas?limit=10&page=2` (para limitar resultados)
 
 ## 📊 Estrutura dos Dados
 
